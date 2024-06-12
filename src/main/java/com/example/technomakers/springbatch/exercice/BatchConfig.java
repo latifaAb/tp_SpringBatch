@@ -18,11 +18,11 @@ public class BatchConfig {
     JobLauncher jobLauncher;
 
     @Autowired
-    Job studentJob;
+    Job currencyJob;
 
 
     public void runJob() throws Exception {
-        jobLauncher.run(studentJob, new JobParametersBuilder().toJobParameters());
+        jobLauncher.run(currencyJob, new JobParametersBuilder().toJobParameters());
     }
     
 }

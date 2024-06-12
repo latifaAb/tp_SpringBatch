@@ -14,11 +14,12 @@
     
     <!-- DataSource configuration -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="org.postgresql.Driver"/>
-        <property name="url" value="jdbc:postgresql://localhost:5432/tp_springbatch"/>
-        <property name="username" value="recettebatch"/>
-        <property name="password" value="recettebatch"/>
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/tp_springbatch"/>
+        <property name="username" value="root"/>
+        <property name="password" value="admin"/>
     </bean>
+
 
 
     <!-- Transaction Manager -->
